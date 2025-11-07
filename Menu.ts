@@ -1,12 +1,22 @@
 import readline = require("readline-sync");
 import {colors} from './src/util/colors';
+import {Conta} from "./src/model/Conta";
+
 
 export function main(){
     let opcao: number;
 
+    const conta: Conta = new Conta(11287, 1232, 1, "Maria", 15000);
+    conta.visualizar();
+    conta.sacar(20000);
+    conta.visualizar();
+    conta.sacar(10500);
+    conta.visualizar();
+    conta.depositar(5000);
+    conta.visualizar();
     while(true){
         console.log(colors.bg.black, colors.fg.yellow,
-            "\n************************************************");
+                  "\n************************************************");
         console.log("                                                ");
         console.log("           BANCO DO BRAZIL COM Z                ");
         console.log("                                                ");
@@ -97,7 +107,7 @@ export function sobre(): void {
     console.log("Projeto Desenvolvido por: ");
     console.log("Kali França - cbjk.kali@gmail.com");
     console.log("github.com/lf-kali");
-    console.log("************************************************");
+    console.log("************************************************\n");
 }
 
 function keyPress(): void {
