@@ -1,6 +1,6 @@
 import { Conta } from "./Conta";
 
-export class ContaPouoanca extends Conta{
+export class ContaPoupanca extends Conta{
     private _aniversario: number;
 
     constructor(numero: number, agencia: number, tipo: number, titular: string, saldo: number, aniversario: number){
