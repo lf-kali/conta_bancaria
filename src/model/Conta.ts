@@ -50,7 +50,7 @@ export class Conta {
     }
 
     public set saldo(saldo){
-        this.saldo = saldo;
+        this._saldo = saldo;
     }
 
     public sacar(valor:number): boolean {
