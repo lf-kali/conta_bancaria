@@ -91,6 +91,5 @@ export class Conta {
         console.log(`Tipo: ${tipo}`);
         console.log(`Titular: ${this._titular}`);
         console.log(`Saldo: ${this._saldo}`);
-        console.log("*****************************************\n");
     }
 }
